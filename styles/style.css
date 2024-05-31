@@ -324,32 +324,43 @@ input {
 .box.yellow {
   background-color: rgb(255, 255, 0);
   border-radius: 50%;
+  z-index: 1;
 }
 
 .box.green {
   background-color: rgb(3, 188, 3);
   border-radius: 50%;
+  z-index: 1;
 }
 
 .box.red {
   background-color: rgb(238, 15, 15);
   border-radius: 50%;
+  z-index: 1;
 }
 
 .box.blue {
   background-color: rgb(0, 0, 255);
   border-radius: 50%;
+  z-index: 1;
 }
 
 #popUp {
   position: absolute;
-  bottom: 0;
-  margin-top: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s ease-in-out;
+  opacity: 1;
+  padding: 2rem;
+  border-radius: 1rem;
   height: 3rem;
   width: 10rem;
   justify-content: center;
   align-items: center;
   color: white;
+  font-size: 1rem;
+  
 }
 @media (width < 475px) {
   #gameBoard {

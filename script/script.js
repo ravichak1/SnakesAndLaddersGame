@@ -47,6 +47,7 @@ let rulesButton = document.querySelector("#rules");
 let showRulesSection = document.querySelector("#showRulesSection");
 let backToGame = document.createElement("button");
 popUp.style.display = "none";
+diceButton.disabled = false;
 showRulesSection.style.display = "none";
 // here is all the event listner
 countPlayers.addEventListener("click", handleCountPlayer);
@@ -206,7 +207,6 @@ function rollDice() {
   ladders(player);
 
   displayPlayer(player);
-
   playerIndex++;
   playerIndex %= players.length;
   displayPlayer(players[playerIndex]);
@@ -348,6 +348,7 @@ function showRules() {
   showRulesSection.append(unorderList);
   showRulesSection.append(backToGame);
 }
+
 backToGame.addEventListener("click", backToback);
 function backToback() {
   showRulesSection.style.display = "none";
