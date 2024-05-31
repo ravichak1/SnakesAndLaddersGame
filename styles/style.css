@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Press Start 2P", system-ui;
+  font-family: "Bangers", system-ui;
+  letter-spacing: 3px;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Bangers", system-ui;
 }
 /* title design section */
 
@@ -29,7 +31,8 @@ body {
   align-items: center;
   justify-content: center;
   h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    letter-spacing: 5px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-weight: 900;
@@ -65,6 +68,8 @@ ul {
 li {
   padding: 0.5rem;
   font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
 .backGame {
