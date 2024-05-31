@@ -1,7 +1,7 @@
 # Snakes and Ladders Game using JS
 
 <p align='center'>
-<img src="./images/Screenshot 2024-05-30 002446.png">
+<img src="./images/desktopScreenshot.png">
 <p>
 
 <details>
@@ -45,8 +45,8 @@ It seems like an easy one from viewer point but developing from the scratch made
 - Player moves down if the player in the snake head cell
 - Player moves up if the player in the ladder cell
 - used `Math.random()` for dice result
-- used user input value for number of players 1 > player < 5 
-- player can select their color from ```['green','red','yellow','blue']```
+- used user input value for number of players 1 > player < 5
+- player can select their color from `['green','red','yellow','blue']`
 - used some popup for displaying the player was eaten by snake or climbing in ladder
 
 ```JavaScript
@@ -75,14 +75,14 @@ function popUpMenuLadder(player, message) {
   }, 1000);
 }
 ```
+
 ## Here is the link for the Game
 
-## <a href="https://ravichak1.github.io/miniProject1/">Here you go </a>
+## <a href="https://ravichak1.github.io/SnakesAndLaddersGame/">Here you go </a>
 
-## You can Make your Own 
+## You can Make your Own
 
 - Fork this repo
 - Clone this repo
 
 <br>
-
