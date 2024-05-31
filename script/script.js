@@ -151,6 +151,7 @@ function startGame() {
   let game = new Game();
   let gameContainer = new Gamecontainer();
   game.display();
+  title.style.display = "none";
   playersHeading.style.display = "none";
   startButton.style.display = "none";
   gameContainer.createContainer();
