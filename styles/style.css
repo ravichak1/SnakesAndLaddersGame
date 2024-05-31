@@ -90,10 +90,14 @@ input[type="button"] {
   padding: auto;
   color: white;
   border: none;
-  padding: 1rem;
 }
 input[type="button"] {
   width: 15rem;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 input[type="number"] {
   font-size: large;
@@ -103,6 +107,10 @@ input[type="number"] {
   border-radius: 0.5rem;
   border: none;
   width: 15rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .btn:hover {
   background-color: #357103;
@@ -112,8 +120,9 @@ input[type="number"] {
 }
 
 #rules {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
+
 #winningMoment {
   font-size: 1.4rem;
   display: flex;
@@ -360,7 +369,6 @@ input {
   align-items: center;
   color: white;
   font-size: 1rem;
-  
 }
 @media (width < 475px) {
   #gameBoard {
