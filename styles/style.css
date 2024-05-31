@@ -220,7 +220,7 @@ input {
 /* game ontainer style */
 
 #game-container {
-  padding-top: 50px;
+  padding-top: 0;
   height: 100%;
   width: 70%;
   justify-content: center;
@@ -230,8 +230,8 @@ input {
 #gameBoard {
   /* border: 1px solid black; */
   background-color: rgba(51, 49, 46, 0.555);
-  height: 80%;
-  width: 80%;
+  height: 400px;
+  width: 400px;
   display: flex;
   margin: auto;
   flex-wrap: wrap;
