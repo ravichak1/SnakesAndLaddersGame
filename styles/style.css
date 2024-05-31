@@ -90,10 +90,11 @@ input[type="button"] {
   padding: auto;
   color: white;
   border: none;
+  padding: 1rem;
 }
 input[type="button"] {
   width: 15rem;
-  padding: 1rem;
+
   position: absolute;
   top: 50%;
   left: 50%;
