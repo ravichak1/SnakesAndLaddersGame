@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/snakeLogo-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <title>Snakes And Ladders</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- title Section which brings the heading and takes number of players input -->
+    <div id="title">
+      <h1 id="headingtitle" class="bounce-in-top">Snakes And Ladders</h1>
+      <div id="playerSection">
+        <h2 id="playerSectionTitle" hidden>
+          Number ofPlayers: <span id="playersNumber">0</span>
+        </h2>
+        <button class="btn generateNumberOfPlayer" id="countPlayers">
+          Choose Number of Players
+        </button>
+        <button id="rules" class="btn">Rules of Snakes and Ladders Life</button>
+      </div>
+      <div id="showRulesSection"></div>
+      <div id="playersInputSection" hidden>
+        <input type="number" id="playerInputValue" />
+        <input type="button" value="Enter" id="playerInputButton" class="btn" />
+      </div>
+      <div id="playerChooseColor" hidden></div>
+    </div>
+
+    <!-- Winning Moment -->
+    <div id="winningMoment">
+      <button class="btn" id="restartButton" hidden>Restart Button</button>
+    </div>
+
+    <!-- Game board container which takes 90% of the screen incles game board and dice roll section -->
+    <div class="container" id="game-container" hidden>
+      <div id="gameBoard">
+        <img
+          src="./images/snakes-and-laddersbackground.jpg"
+          alt=""
+          class="backgroundImg"
+        />
+      </div>
+      <div id="diceSection">
+        <img src="./images/dice2.png" alt="Dice Image" id="diceImage" />
+        <button class="btn" id="diceButton">Roll a Dice</button>
+        <audio src="./sounds/rollDice.mp3" id="audioRoll" hidden></audio>
+      </div>
+    </div>
+
+    <!-- this sextion is all about restart game and start game -->
+    <div class="buttonsSection" hidden>
+      <button class="btn" id="startButton">Start Game</button>
+      <!--  -->
+    </div>
+    <div id="popUp" hidden></div>
+
+    <!-- script files goes here -->
+    <script src="./script/script.js"></script>
+    <script src="./script/game.js"></script>
+    <script src="./script/game-container.js"></script>
+  </body>
+</html>
