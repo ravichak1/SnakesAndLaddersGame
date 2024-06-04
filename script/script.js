@@ -252,31 +252,31 @@ function ladders(player) {
   if (player.row === 0 && player.col === 3) {
     player.row = 2;
     player.col = 4;
-    popUpMenuLadder(player, "Your Lucky");
+    popUpMenu(player, "Your Lucky");
   } else if (player.row === 1 && player.col === 2) {
     player.row = 4;
     player.col = 5;
-    popUpMenuLadder(player, "Your Lucky");
+    popUpMenu(player, "Your Lucky");
   } else if (player.row === 3 && player.col === 2) {
     player.row = 4;
     player.col = 8;
-    popUpMenuLadder(player, "Your Lucky");
+    popUpMenu(player, "Your Lucky");
   } else if (player.row === 4 && player.col === 9) {
     player.row = 6;
     player.col = 8;
-    popUpMenuLadder(player, "Your Lucky");
+    popUpMenu(player, "Your Lucky");
   } else if (player.row === 4 && player.col === 1) {
     player.row = 6;
     player.col = 2;
-    popUpMenuLadder(player, "Oh no no no");
+    popUpMenu(player, "Oh no no no");
   } else if (player.row === 6 && player.col === 1) {
     player.row = 8;
     player.col = 0;
-    popUpMenuLadder(player, "Your Lucky");
+    popUpMenu(player, "Your Lucky");
   } else if (player.row === 7 && player.col === 3) {
     player.row = 9;
     player.col = 1;
-    popUpMenuLadder(player, "Your Lucky");
+    popUpMenu(player, "Your Lucky");
   }
 }
 
@@ -323,17 +323,17 @@ function popUpMenu(player, message) {
   }, 1000);
 }
 
-function popUpMenuLadder(player, message) {
-  let popUpText = document.createElement("div");
-  popUpText.innerText = `${message}`;
-  popUp.append(popUpText);
-  popUp.style.display = "flex";
-  popUp.style.backgroundColor = `${player.color}`;
-  timeOutId = setTimeout(() => {
-    popUp.style.display = "none";
-    popUpText.innerText = "";
-  }, 1000);
-}
+// function popUpMenuLadder(player, message) {
+//   let popUpText = document.createElement("div");
+//   popUpText.innerText = `${message}`;
+//   popUp.append(popUpText);
+//   popUp.style.display = "flex";
+//   popUp.style.backgroundColor = `${player.color}`;
+//   timeOutId = setTimeout(() => {
+//     popUp.style.display = "none";
+//     popUpText.innerText = "";
+//   }, 1000);
+// }
 
 function showRules() {
   playerSection.style.display = "none";
