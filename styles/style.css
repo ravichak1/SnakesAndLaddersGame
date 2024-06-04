@@ -196,16 +196,16 @@ input {
     grid-row: 2/3;
   }
 }
-.green1 {
+.green{
   background-color: green;
 }
-.blue1 {
+.blue{
   background-color: blue;
 }
-.red1 {
+.red{
   background-color: red;
 }
-.yellow1 {
+.yellow{
   background-color: yellow;
 }
 .colorButton {
@@ -332,25 +332,25 @@ input {
   align-items: center;
 }
 
-.box.yellow {
+.yellow {
   background-color: rgb(255, 255, 0);
   border-radius: 50%;
   z-index: 1;
 }
 
-.box.green {
+.green {
   background-color: rgb(3, 188, 3);
   border-radius: 50%;
   z-index: 1;
 }
 
-.box.red {
+.red {
   background-color: rgb(238, 15, 15);
   border-radius: 50%;
   z-index: 1;
 }
 
-.box.blue {
+.blue {
   background-color: rgb(0, 0, 255);
   border-radius: 50%;
   z-index: 1;
@@ -403,7 +403,7 @@ input {
     display: none;
   }
 
-  [row="0"]:nth-child(even) {
+  /* [row="0"]:nth-child(even) {
     background-color: rgba(255, 255, 255, 0);
   }
 
@@ -433,32 +433,9 @@ input {
   }
   [row="9"]:nth-child(odd) {
     background-color: rgba(255, 255, 255, 0);
-  }
+  } */
 
-  .box.yellow {
-    z-index: 1;
-    background-color: rgb(255, 255, 0);
-    border-radius: 50%;
-  }
-
-  .box.green {
-    z-index: 1;
-    background-color: rgb(3, 188, 3);
-    border-radius: 50%;
-  }
-
-  .box.red {
-    z-index: 1;
-    background-color: rgb(238, 15, 15);
-    border-radius: 50%;
-  }
-
-  .box.blue {
-    z-index: 1;
-    background-color: rgb(0, 0, 255);
-    border-radius: 50%;
-  }
-
+  
   #diceSection {
     flex-direction: row;
     margin: 0;

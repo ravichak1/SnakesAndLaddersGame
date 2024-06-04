@@ -88,7 +88,6 @@ function handleCountPlayer() {
     console.log("here");
     eachValue = document.createElement("button");
     eachValue.classList.add(each);
-    eachValue.classList.add(`${each}1`);
     eachValue.classList.add("colorButton");
     eachValue.textContent = each;
 
